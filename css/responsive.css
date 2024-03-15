@@ -1,0 +1,192 @@
+/*========= 01. Theme default CSS responsive=========*/
+@media screen and (max-width: 1150px){
+    .carousel .card {
+        width: 85vw;
+    }
+}
+
+@media screen and (max-width: 988px) {
+    .contanier{
+        max-width: 970px;
+        margin: auto;
+    }
+    .about-desc {
+        width: 55%;
+    }
+    .img-bx{
+        position:static;
+        width: 33%;
+        border: none;
+    }
+    .img-bx .img-cont{
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .service-area .row .card, .portfolio-area .row .portfolio-card{
+        flex: 1 1 40%;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .contanier{
+        max-width: 750px;
+    }
+    .about-desc {
+        width: 70%;
+    }
+    .img-bx{
+        width: 50%;
+        margin-left: 0;
+    }
+    .first-card{
+        left: 1%;
+    }
+    .carousel:hover .third-card{
+        left: 1%;
+    }
+    .carousel .card {
+        padding: 10px 40px;
+    }
+
+}
+@media (max-width: 770px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+    .row > div{
+        width:90%;
+    }
+    .carousel .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel .card  img{
+        height: 150px;
+        width: 150px;
+    }
+    .carousel .card , .testimonial-area .carousel{
+        height: 600px;
+    }
+    .carousel .card  img{
+        margin-top: 30px;
+    }
+}
+
+/*========= 02. Home-area css responsive =========*/
+
+@media screen and (max-width: 945px) {
+    nav{
+        padding: 20px 20px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .menu{
+        width: 100%;
+        max-height:0 ;
+        overflow: hidden;
+    }
+    nav label{
+        display: table-cell;
+    }
+    #toggler:checked ~ .menu{
+        overflow: visible;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        background-color: #555555;
+        height: 300px;
+    }
+    .list::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    nav{
+        padding: 20px 10vw;
+    }
+    .contact-area .contanier {
+        width: 500px;
+    }
+    .btns{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/*========= 02. About-area css css =========*/
+
+@media (min-width: 1199px){
+    .about-desc {
+        padding-left: 80px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .about-desc {
+        padding-left: 40px;
+    }
+}
+@media (min-width: 770px) and (max-width: 991px){
+    .about-desc {
+        padding-left: 20px;
+    }
+    .about-desc ul li , .about-desc p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 770px) {
+    .about-desc {
+        padding-left: 0px;
+    }
+}
+@media (max-width: 500px){
+    .about-desc ul{
+        flex-direction: column;
+    }
+    .about-desc ul li{
+        width: 100%;
+    }
+}
+@media (min-width: 580px) and (max-width: 770px){
+    .about-area .img-bx {
+        width: 60%;
+    }
+}
+@media (min-width: 500px) and (max-width: 580px){
+    .about-area .img-bx {
+        width: 70%;
+    }
+
+}
+/*========= 07. testimonel-area css responsive  =========*/
+@media screen and (max-width: 550px){
+    .carousel .card {
+        padding: 10px 20px;
+    }
+    .carousel .card .card-desc p{
+        font-size: 14px;
+    }
+
+    .contact-area .contanier {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px){
+    .carousel .card  img{
+        height: 100px;
+        width: 100px;
+    }
+    .carousel .card , .testimonial-area .carousel{
+        height: 650px;
+    }
+}
+

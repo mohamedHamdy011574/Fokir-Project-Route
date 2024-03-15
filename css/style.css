@@ -1,0 +1,581 @@
+/* 
+    CSS INDEX
+    ===================
+    00. google fonts
+    01. Theme default CSS
+    02  Home-area css
+    03. About-area css 
+    04. Service-area css 
+    05. Portfolio-area css 
+    06. fun-facts-area css
+    07. testimonel-area css
+    08. contact-area css 
+    09. footer css
+
+*/
+
+/*========= 00. google fonts =========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*----------------------------------------
+
+/*========= 01. Theme default CSS =========*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0px solid;
+}
+p {
+    margin: 0 0 15px;
+    line-height: 25px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+a {
+    color:white;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: lighter;
+}
+a:hover, .active {
+    color: #ff305b;
+    text-decoration: none;
+}
+a:active,
+a:hover,
+input:focus {
+    outline: 0 none;
+}
+ul {
+    list-style: outside none none;
+}
+body {
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.contanier{
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+}
+.clear {
+    clear: both;
+}
+.gray-sec{
+    background-color: #f1f1f1;
+}
+.title{
+    color:#333;
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+
+}
+.line{
+    top: 60px;
+    height: 1px;
+    width: 70px;
+}
+.title::before, .title::after, .line{
+    content: "";
+    background-color: #ff305b;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+.title::after{
+    bottom: 5px;
+    height: 1px;
+    width: 150px
+}
+.title::before{
+    bottom: 10px;
+    height: 1px;
+    width: 70px
+}
+
+/*========= 02. Home-area css =========*/
+
+.home-area{
+    position: relative;
+    background: url(/Images/slider/slider2.jpeg) scroll center center / cover;
+    height: 100%;
+    width: 100%;
+}
+.home-area::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.8);
+}
+.home-area *{
+    position: relative;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5em;
+}
+nav .logo{
+    color: #ff305b;
+    font-size: 25px;
+}
+.list{
+    display: flex;
+    gap: 1.5em;
+    padding-top: 7px;
+    z-index: 100;
+}
+
+/* ---------------------------------------------- */
+/*========= Hamburger nav bar ========== */
+nav label,nav input{
+    display: none;
+}
+/* --------------------------------------------- */
+.home-area .home-contanier{
+    padding: 0;
+    text-align: center;
+    margin-top: 160px;
+}
+.home-area .home-contanier h3{
+    color: white;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+.home-area .home-contanier h1{
+    font-size: 3em;
+    color: #ff305b;
+}
+
+/*========= 03. About-area css =========*/
+
+.img-bx{
+    position: relative;
+    width: 31%;
+    height: 380px;
+    margin-left: 5.3%;
+    border: 5px solid #555555;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.img-bx .img-cont{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: -30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.img-bx .img-cont img{
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.icons ul{
+    display: flex;
+    gap: 30px;
+}
+.icons{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    background: rgba(0, 0, 0, 0.57);
+    visibility: hidden;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.img-cont:hover .icons{
+    height: 99.5%;
+    visibility: visible;
+}
+.icons ul li:hover{
+    cursor: pointer;
+}
+.about-desc {
+    width: 58.3%;
+
+}
+.about-desc h3{
+    position: relative;
+    font-size: 35px;
+    margin-left: 15px;
+}
+.about-desc h3::before{
+    content: "";
+    height: 25px;
+    width: 4px;
+    top: 20%;
+    left: -10px;
+    background-color: #ff305b;
+    position: absolute;
+
+}
+.about-desc p{
+    border-bottom: 1px dashed #616161;
+    padding-bottom: 20px;
+}
+.about-desc ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-desc ul li{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.about-desc ul li span{
+    font-weight: bold;
+}
+.about-desc button{
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    background-color: #ff305b;
+    border: 0;
+}
+.about-desc button:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+.dow{
+    width: 150px;
+    margin-right: 30px;
+}
+.hireme{
+    width: 100px;
+}
+
+/*========= 04. Service-area css  =========*/
+
+.service-area .contanier{
+    text-align: center;
+}
+
+.service-area .row{
+    flex-wrap: wrap;
+}
+.service-area .row .card{
+    padding: 45px 15px;
+    flex: 1 1 25%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.service-area .row .card h3{
+    color:#333;
+}
+.service-area .row .card i{
+    color: #ff305b;
+    display: inline-block;
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.service-area .row .card:hover{
+    background-color: white;
+    box-shadow: 4px 4px 4px 4px rgb(209, 208, 208);
+    
+}
+.service-area .row .card:hover i{
+    font-size: 40px;
+}
+
+/*========= 05. Portfolio-area css  =========*/
+
+.portfolio-area .contanier{
+    text-align: center;   
+}
+.portfolio-area .contanier .works{
+    margin-bottom: 50px;  
+}
+.portfolio-area .contanier ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;    
+}
+.portfolio-area .row{
+    flex-wrap: wrap;   
+}
+.portfolio-area .row .portfolio-card{
+    flex: 1 1 25%;
+    margin: 20px;
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.portfolio-area .row .portfolio-card img{
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/*========= 06. fun-facts-area css  =========*/
+
+.funFacts-area .row{
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 40px 0px;
+}
+.funFacts-area .row .fact{
+    display: flex;
+    flex-direction: column;
+}
+.funFacts-area .row .fact i{
+    color: #ff305b;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.funFacts-area .row .fact span{
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+.funFacts-area .row .fact p{
+    color: #555555;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*========= 07. testimonel-area css  =========*/
+.testimonial-area .row{
+    display: block;
+}
+.testimonial-area .contanier .title{
+    text-align: center;
+}
+.carousel{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    height: 300px;
+    position: relative;
+}
+.carousel .card {
+    display: flex;
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: left 1s ease-in-out;
+    -webkit-transition: left 1s ease-in-out;
+    -moz-transition: left 1s ease-in-out;
+    -ms-transition: left 1s ease-in-out;
+    -o-transition: left 1s ease-in-out;
+}
+.carousel .card  img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 100px;
+    margin-top: 70px;
+    position: relative;
+}
+.carousel .card .card-desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.carousel .card .card-desc h3{
+    font-size: 26px;
+}
+.location i{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.fa-star{
+    color:yellow;
+}
+.second-card{
+    left: 1200px;
+}
+.third-card{
+    left:3000px;
+}
+.first-card{
+    left:10%;
+}
+.carousel:hover .third-card{
+    left:10%;
+}
+.carousel:hover .second-card{
+    left:-1500px;
+}
+.carousel:hover .first-card{
+    left:1500px;
+}
+
+/*========= 08. contact-area css  =========*/
+.contact-area .contanier {
+    width: 720px;
+}
+.contact-area h3{
+    text-align: center;
+}
+.contact-area form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.btns{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+.contact-area form input{
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.contact-area form  button{
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    padding: 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    background-color: #ff305b;
+    border: 0;
+}
+.contact-area form button:hover{
+    cursor:not-allowed;
+    background-color: orangered;
+}
+
+/*========= 09. footer-area css  =========*/
+.footer-area{
+    background-color: #333;
+    padding-bottom: 20px;
+}
+.footer-area .footer-icons{
+    display: flex;
+    justify-content: center;
+}
+.footer-area .footer-icons ul{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
